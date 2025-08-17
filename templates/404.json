@@ -52,8 +52,8 @@
           "type": "hotspot-block",
           "settings": {
             "hotspot_product": "classic-varsity-top",
-            "hotspot_icon_position_top": 50,
-            "hotspot_icon_position_left": 50
+            "hotspot_icon_position_top": 25,
+            "hotspot_icon_position_left": 47
           }
         },
         "hotspot_block_T8BVkG": {
