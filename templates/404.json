@@ -36,8 +36,8 @@
           "type": "hotspot-block",
           "settings": {
             "hotspot_product": "chequered-red-shirt",
-            "hotspot_icon_position_top": 50,
-            "hotspot_icon_position_left": 50
+            "hotspot_icon_position_top": 17,
+            "hotspot_icon_position_left": 60
           }
         },
         "hotspot_block_gwViGt": {
