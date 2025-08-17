@@ -27,7 +27,7 @@ class CustomHotspotSection extends HTMLElement {
   }
   async showProduct(productHandle) {
     try {
-      const cardProductUrl = `/products/${productHandle}?view=product-card`;
+      const cardProductUrl = `/products/${productHandle}?view=custom-product-card`;
       const response = await fetch(cardProductUrl);
       if (!response.ok) throw new Error('Failed to fetch product');
       let card = await response.text();
@@ -44,7 +44,7 @@ class CustomVariantSelector extends HTMLElement {
     super();
     this.variants = [];
     this.selectedOptions = {};
-    this.autoVariantId = this.closest("hotspot-section").getAttribute("data-auto-variant-id");
+    this.autoVariantId = this.closest("custom-hotspot-section").getAttribute("data-auto-variant-id");
     this.addAutoVariantId = false;
   }
 

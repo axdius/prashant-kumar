@@ -29,7 +29,7 @@
       {%- for block in section.blocks -%}
         {% assign hotspot_image = block.settings.hotspot_product.featured_image %}
         {% if block.settings.hotspot_image != blank %}
-          {% assign hotspot_image = block.settings.featured_image %}
+          {% assign hotspot_image = block.settings.hotspot_image %}
         {% endif %}
         <div class="hotspot-block">
           <img class="hotspot-image" src="{{ hotspot_image | image_url }}">

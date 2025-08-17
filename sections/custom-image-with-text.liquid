@@ -44,6 +44,10 @@
           </a>
         {% endif %}
       </div>
+    {% else %}
+        <div class="image-text-banner-wrapper">
+            {{ 'lifestyle-2' | placeholder_svg_tag: "image-text-banner" }}
+        </div>
     {% endif %}
   </div>
 </section>

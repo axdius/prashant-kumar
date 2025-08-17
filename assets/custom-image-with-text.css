@@ -3,6 +3,7 @@
 }
 .image-text-banner-wrapper {
   position: relative;
+  width: 100%;
 }
 .image-text-section .image-text-banner {
   width: 100%;
