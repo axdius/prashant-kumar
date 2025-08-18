@@ -43,11 +43,9 @@
         </div>
         {% else %}
           <div class="hotspot-block placeholder">
-            {{ 'product-' |  append: forloop.index | placeholder_svg_tag: "hotspot-image" }}
+            {{ 'product-' | append: forloop.index | modulo: 6 | plus: 1 | placeholder_svg_tag: "hotspot-image" }}
           </div>
-        {% else %}
         {% endif %}  
-        
       {%- endfor -%}
     </div>
     <div class="hotspot-card-popup-overlay hidden">
