@@ -80,8 +80,8 @@
           "type": "hotspot-block",
           "settings": {
             "hotspot_product": "classic-leather-jacket",
-            "hotspot_icon_position_top": 50,
-            "hotspot_icon_position_left": 50
+            "hotspot_icon_position_top": 20,
+            "hotspot_icon_position_left": 70
           }
         },
         "hotspot_block_X8ALgb": {
