@@ -54,10 +54,27 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_header_apj87N": {
+      "type": "custom-header",
+      "name": "Custom Header",
+      "settings": {
+        "background_color": "#f5f5f5",
+        "header_logo": "shopify://shop_images/Group_1000007777.png",
+        "header_text": "Find the ideal gift for your loved ones.",
+        "button_label": "choose gift",
+        "button_link": "shopify://collections",
+        "button_background_color": "#fff544",
+        "padding_top": 10,
+        "padding_bottom": 10,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom_header_apj87N"
   ]
 }
