@@ -60,7 +60,22 @@
     {
       "type": "image_picker",
       "id": "banner_image",
-      "label": "BannerImage"
+      "label": "Banner Image Desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_image_mobile",
+      "label": "Banner Image Mobile"
+    },
+    {
+        "type": "header",
+        "content": "Secondary Banner Image Settings",
+    },
+    {
+        "type": "image_picker",
+        "id": "secondary_banner_image",
+        "label": "Secondary Banner Image",
+        "info": "This image is only for desktop view. It will not be displayed on mobile devices."
     },
     {
       "type": "text",
@@ -84,10 +99,14 @@
       "label": "Button Link"
     },
     {
-      "type": "checkbox",
-      "id": "mobile_hide",
-      "label": "Disable Section For Mobile",
-      "default": false,
+        "type": "header",
+        "content": "Banner footer Settings",
+    },
+    {
+        "type": "text",
+        "id": "footer_text",
+        "label": "Footer Text",
+        "default": "This is a footer text"
     },
     {
       "type": "header",
