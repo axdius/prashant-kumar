@@ -52,21 +52,35 @@
     let headerCloseButton = document.querySelector('.icon-header-cross');
     let headerDropDown = document.querySelector('.custom-header');
 
-    if (hamburger && headerCloseButton && headerCloseButton) {
+    if (hamburger && headerCloseButton && headerDropDown) {
+      // Open menu
       hamburger.addEventListener('click', () => {
-        headerDropDown.classList.toggle('open');
+        headerDropDown.classList.add('open');
         hamburger.classList.add('hidden');
         headerCloseButton.classList.remove('hidden');
       });
 
+      // Close menu
       headerCloseButton.addEventListener('click', () => {
-        headerDropDown.classList.toggle('open');
+        headerDropDown.classList.remove('open');
         hamburger.classList.remove('hidden');
         headerCloseButton.classList.add('hidden');
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', (event) => {
+        let isClickInside = headerDropDown.contains(event.target) || hamburger.contains(event.target);
+
+        if (!isClickInside && headerDropDown.classList.contains('open')) {
+          headerDropDown.classList.remove('open');
+          hamburger.classList.remove('hidden');
+          headerCloseButton.classList.add('hidden');
+        }
       });
     }
   });
 </script>
+
 {% schema %}
 {
   "name": "Custom Header",

@@ -24,6 +24,14 @@ class CustomHotspotSection extends HTMLElement {
       this.popupContent.innerHTML = '';
       this.popupContent.appendChild(this.popupLoader);
     })
+    this.popup.addEventListener("click", (event) => {
+      if (event.target === this.popup) {
+        this.popup.classList.add("hidden");
+        document.body.style.overflow = "auto";
+        this.popupContent.innerHTML = '';
+        this.popupContent.appendChild(this.popupLoader);
+      }
+    });
   }
   async showProduct(productHandle) {
     try {
