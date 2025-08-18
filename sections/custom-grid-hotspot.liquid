@@ -31,7 +31,8 @@
         {% if block.settings.hotspot_image != blank %}
           {% assign hotspot_image = block.settings.hotspot_image %}
         {% endif %}
-        <div class="hotspot-block">
+        {% if hotspot_image != blank %}
+          <div class="hotspot-block">
           <img class="hotspot-image" src="{{ hotspot_image | image_url }}">
           <span
             class="hotspot-icon icon-{{ block.id }}"
@@ -40,6 +41,13 @@
             {% render 'hotspot-icon' %}
           </span>
         </div>
+        {% else %}
+          <div class="hotspot-block placeholder">
+            {{ 'product-' |  append: forloop.index | placeholder_svg_tag: "hotspot-image" }}
+          </div>
+        {% else %}
+        {% endif %}  
+        
       {%- endfor -%}
     </div>
     <div class="hotspot-card-popup-overlay hidden">

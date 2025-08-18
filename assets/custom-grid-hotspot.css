@@ -15,6 +15,9 @@
 .hotspot-block {
   position: relative;
 }
+.hotspot-block.placeholder {
+    border: 1px solid #000;
+}
 .hotspot-icon {
   position: absolute;
   cursor: pointer;
