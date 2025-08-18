@@ -43,7 +43,9 @@
         </div>
         {% else %}
           <div class="hotspot-block placeholder">
-            {{ 'product-' | append: forloop.index | modulo: 6 | plus: 1 | placeholder_svg_tag: "hotspot-image" }}
+            {% assign mod_index = forloop.index | modulo: 6 | plus: 1 %}
+            {{ 'product-' | append: mod_index | placeholder_svg_tag: "hotspot-image" }}
+          
           </div>
         {% endif %}  
       {%- endfor -%}
