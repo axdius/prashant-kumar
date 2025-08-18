@@ -1,6 +1,9 @@
 .custom-image-with-text-content-wrapper {
     display: flex;
 }
+.custom-image-with-text-wrapper.first-fold {
+    position: relative;
+}
 .custom-image-with-text-content {
     width: 38%;
     padding-left: 68px;
@@ -25,23 +28,68 @@
     margin: 50px 0 50px 0;
 }
 .custom-image-with-text-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 220px;
-    font-family: "Jost Regular", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    gap: 28px;
-    padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 220px;
+  font-family: "Jost Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  gap: 28px;
+  padding-left: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.custom-image-with-text-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* base color */
+  z-index: -2;
+}
+
+.custom-image-with-text-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #FFF544; /* hover darker shade */
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.custom-image-with-text-button:hover::before {
+  width: 100%;
+}
+.custom-image-with-text-button:hover {
+  color: black;
+}
+
+.custom-image-with-text-button:hover svg path {
+  fill: black;
+  stroke: black;
+}
+
+.custom-image-with-text-button span,
+.custom-image-with-text-button svg {
+  position: relative;
+  z-index: 2; /* keep text and icon above bg */
 }
 .custom-image-with-text-footer {
     display: flex;
@@ -61,4 +109,34 @@
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+}
+.custom-icon-arrow {
+    width: 24px;
+}
+@media screen and (min-width: 750px) {
+  .main-banner-button.hide-desktop {
+    display: none;
+  }
+  .desktop-hidden{
+    display: none;
+  }
+}
+@media screen and (max-width: 749px) {
+  .custom-image-with-text-content-wrapper.second-fold{
+    display: none;
+  }
+    .main-banner-button {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 45px;
+        width: 200px;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+    .custom-image-with-text-footer .custom-image-with-text-footer-text {
+        font-size: 14px;
+    }
 }

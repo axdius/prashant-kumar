@@ -46,7 +46,14 @@
             width="100%"
           >
         </picture>
+        
       </div>
+      {% if section.settings.button_label and section.settings.button_link %}
+          <a href="{{ section.settings.button_link }}" class="custom-image-with-text-button main-banner-button hide-desktop">
+            <span>{{ section.settings.button_label }}</span>
+            <span>{% render 'icon-arrow', custom: "custom-icon-arrow" %}</span>
+          </a>
+      {% endif %}
     {% else %}
       <div class="image-banner-main-wrapper placeholder">
         {{ 'lifestyle-2' | placeholder_svg_tag: 'image-text-banner' }}
@@ -62,7 +69,7 @@
       {% if section.settings.button_label and section.settings.button_link %}
         <a href="{{ section.settings.button_link }}" class="custom-image-with-text-button">
           <span>{{ section.settings.button_label }}</span>
-          <span>{% render 'icon-arrow' %}</span>
+          <span>{% render 'icon-arrow', custom: "custom-icon-arrow" %}</span>
         </a>
       {% endif %}
     </div>
@@ -80,7 +87,8 @@
   </div>
   {% if section.settings.footer_text %}
     <div class="custom-image-with-text-footer">
-      <p class="custom-image-with-text-footer-text">{{ section.settings.footer_text }}</p>
+      <p class="custom-image-with-text-footer-text mobile-hidden">{{ section.settings.footer_text}}</p>
+      <p class="custom-image-with-text-footer-text desktop-hidden">{{ section.settings.footer_text_mobile }}</p>
     </div>
   {% endif %}
 </section>
@@ -142,6 +150,12 @@
       "id": "footer_text",
       "label": "Footer Text",
       "default": "This is a footer text"
+    },
+    {
+      "type": "text",
+      "id": "footer_text_mobile",
+      "label": "Footer Text",
+      "default": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR"
     },
     {
       "type": "header",
