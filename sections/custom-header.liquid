@@ -24,13 +24,15 @@
     <div class="large-up-hide header-mobile">
       <span class="icon-header-hamburger">{% render 'icon-hamburger' %}</span>
       <span class="icon-header-cross hidden">{% render 'icon-large-cross' %}</span>
-      <span><img class="header-logo" src="{{ section.settings.header_logo | image_url }}"></span>
+      <span class="custom-header-logo"><a href="{{ shop.url }}"><img class="header-logo" src="{{ section.settings.header_logo | image_url }}"></a></span>
     </div>
   {% endif %}
   <div class="custom-header">
     {% if section.settings.header_logo != blank %}
       <div class="custom-header-logo small-hide medium-hide">
-        <img class="header-logo" src="{{ section.settings.header_logo | image_url }}">
+        <a href="{{ shop.url }}">
+          <img class="header-logo" src="{{ section.settings.header_logo | image_url }}">
+        </a>
       </div>
     {% endif %}
     {% if section.settings.header_text != blank %}
