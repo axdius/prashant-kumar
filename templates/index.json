@@ -48,9 +48,80 @@
         "mobile_content_alignment": "center",
         "show_text_below": false
       }
+    },
+    "custom_grid_hotspot_HCrCpP": {
+      "type": "custom-grid-hotspot",
+      "blocks": {
+        "hotspot_block_XtDibY": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "",
+            "hotspot_icon_position_top": 50,
+            "hotspot_icon_position_left": 50
+          }
+        },
+        "hotspot_block_AjLBxE": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "",
+            "hotspot_icon_position_top": 50,
+            "hotspot_icon_position_left": 50
+          }
+        },
+        "hotspot_block_73geWA": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "",
+            "hotspot_icon_position_top": 50,
+            "hotspot_icon_position_left": 50
+          }
+        },
+        "hotspot_block_MwReNm": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "",
+            "hotspot_icon_position_top": 50,
+            "hotspot_icon_position_left": 50
+          }
+        },
+        "hotspot_block_X8ALgb": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "",
+            "hotspot_icon_position_top": 50,
+            "hotspot_icon_position_left": 50
+          }
+        },
+        "hotspot_block_BVNEei": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "",
+            "hotspot_icon_position_top": 50,
+            "hotspot_icon_position_left": 50
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_block_XtDibY",
+        "hotspot_block_AjLBxE",
+        "hotspot_block_73geWA",
+        "hotspot_block_MwReNm",
+        "hotspot_block_X8ALgb",
+        "hotspot_block_BVNEei"
+      ],
+      "name": "Custom grid hotspot",
+      "settings": {
+        "heading": "Tisso vison in the wild",
+        "auto_add_product": "dark-winter-jacket",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 32,
+        "mobile_padding_bottom": 32
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "custom_grid_hotspot_HCrCpP"
   ]
 }
