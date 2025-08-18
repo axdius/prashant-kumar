@@ -42,51 +42,6 @@
   stroke: #000;
   fill: #000;
 }
-@media screen and (max-width: 749px) {
-  .custom-header {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.6rem;
-    max-height: 0;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none;
-    transition:height 0.5s ease, opacity 0.5s ease;
-    -webkit-transition:height 0.5s ease, opacity 0.5s ease;
-    -moz-transition:height 0.5s ease, opacity 0.5s ease;
-    -ms-transition:height 0.5s ease, opacity 0.5s ease;
-    -o-transition:height 0.5s ease, opacity 0.5s ease;
-}
-
-  .custom-header.open {
-    background: white;
-    width: 100%;
-    padding: 2.5rem;
-    height: 100px;
-    max-height: 100px;
-    opacity: 1;
-    pointer-events: auto;
-    transition:height 0.3s ease, opacity 0.3s ease;
-    -webkit-transition:height 0.3s ease, opacity 0.3s ease;
-    -moz-transition:height 0.3s ease, opacity 0.3s ease;
-    -ms-transition:height 0.3s ease, opacity 0.3s ease;
-    -o-transition:height 0.3s ease, opacity 0.3s ease;
-}
-  .custom-header-section .icon-header-hamburger,
-  .custom-header-section .icon-header-cross {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 1.6rem;
-  }
-  .custom-header-section .header-mobile span {
-    display: flex;
-    align-items: center;
-  }
-}
 .header-button {
   display: flex;
   align-items: center;
@@ -152,4 +107,52 @@
 .header-button svg {
   position: relative;
   z-index: 2; /* keep text and icon above bg */
+}
+@media screen and (max-width: 749px) {
+  .custom-header {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    max-height: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition:height 0.5s ease, opacity 0.5s ease;
+    -webkit-transition:height 0.5s ease, opacity 0.5s ease;
+    -moz-transition:height 0.5s ease, opacity 0.5s ease;
+    -ms-transition:height 0.5s ease, opacity 0.5s ease;
+    -o-transition:height 0.5s ease, opacity 0.5s ease;
+}
+  
+  .custom-header.open {
+    background: white;
+    width: 100%;
+    padding: 2.5rem;
+    height: 125px;
+    max-height: 125px;
+    opacity: 1;
+    pointer-events: auto;
+    transition:height 0.3s ease, opacity 0.3s ease;
+    -webkit-transition:height 0.3s ease, opacity 0.3s ease;
+    -moz-transition:height 0.3s ease, opacity 0.3s ease;
+    -ms-transition:height 0.3s ease, opacity 0.3s ease;
+    -o-transition:height 0.3s ease, opacity 0.3s ease;
+}
+  .custom-header-section .icon-header-hamburger,
+  .custom-header-section .icon-header-cross {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1.6rem;
+  }
+  .custom-header-section .header-mobile span {
+    display: flex;
+    align-items: center;
+  }
+  .header-button {
+    height: 44px;
+  }
 }
