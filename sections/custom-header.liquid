@@ -39,7 +39,7 @@
     {% if section.settings.button_link != blank and section.settings.button_label != blank %}
       <a href="{{ section.settings.button_link }}" class="header-button">
         <span>{{ section.settings.button_label }}</span>
-        <span>{% render 'icon-arrow' %}</span>
+        <span>{% render 'icon-arrow', custom: "custom-icon-arrow" %}</span>
       </a>
     {% endif %}
   </div>

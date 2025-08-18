@@ -11,7 +11,7 @@
   align-items: center;
 }
 .custom-header-section .header-text {
-  font-family: var(--heading-family);
+  font-family: "Jost Regular", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 13.42px;
@@ -27,7 +27,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .custom-header-section .header-button {
-  font-family: var(--heading-family);
+  font-family: "Jost Regular", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 20.48px;
