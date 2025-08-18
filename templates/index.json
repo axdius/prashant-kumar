@@ -64,16 +64,16 @@
           "type": "hotspot-block",
           "settings": {
             "hotspot_product": "blue-silk-tuxedo",
-            "hotspot_icon_position_top": 50,
-            "hotspot_icon_position_left": 50
+            "hotspot_icon_position_top": 46,
+            "hotspot_icon_position_left": 80
           }
         },
         "hotspot_block_73geWA": {
           "type": "hotspot-block",
           "settings": {
             "hotspot_product": "chequered-red-shirt",
-            "hotspot_icon_position_top": 50,
-            "hotspot_icon_position_left": 50
+            "hotspot_icon_position_top": 16,
+            "hotspot_icon_position_left": 60
           }
         },
         "hotspot_block_MwReNm": {
