@@ -24,7 +24,6 @@
     {% if section.settings.heading != blank %}
       <div class="hotspot-section-heading">{{ section.settings.heading }}</div>
     {% endif %}
-    <div></div>
     <div class="hotspot-wrapper">
       {%- for block in section.blocks -%}
         {% assign hotspot_image = block.settings.hotspot_product.featured_image %}
