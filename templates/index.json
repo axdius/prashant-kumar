@@ -35,36 +35,56 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
+      }
+    },
+    "custom_image_with_text_FPMzLw": {
+      "type": "custom-image-with-text",
+      "name": "Custom Image with Text",
+      "settings": {
+        "banner_image": "shopify://shop_images/Frame.png",
+        "banner_image_mobile": "shopify://shop_images/Frame_2.png",
+        "secondary_banner_image": "shopify://shop_images/Frame_1.png",
+        "heading": "The Gift Guide",
+        "description": "<p>Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.</p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections",
+        "footer_text": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL",
+        "footer_text_mobile": "SUSTAINABLE, ETHICALLY MADE ACTIVEWEAR",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
+        "collection": "all",
+        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -72,13 +92,86 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "custom_grid_hotspot_ePgqhi": {
+      "type": "custom-grid-hotspot",
+      "blocks": {
+        "hotspot_block_qMRk3p": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "black-leather-bag",
+            "hotspot_icon_position_top": 52,
+            "hotspot_icon_position_left": 58
+          }
+        },
+        "hotspot_block_BPx8Qb": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "blue-silk-tuxedo",
+            "hotspot_icon_position_top": 46,
+            "hotspot_icon_position_left": 78
+          }
+        },
+        "hotspot_block_y8Gx9H": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "chequered-red-shirt",
+            "hotspot_icon_position_top": 16,
+            "hotspot_icon_position_left": 60
+          }
+        },
+        "hotspot_block_dY7iPF": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "classic-leather-jacket",
+            "hotspot_icon_position_top": 20,
+            "hotspot_icon_position_left": 70
+          }
+        },
+        "hotspot_block_jFzBGU": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "classic-varsity-top",
+            "hotspot_icon_position_top": 30,
+            "hotspot_icon_position_left": 45
+          }
+        },
+        "hotspot_block_Rta8TB": {
+          "type": "hotspot-block",
+          "settings": {
+            "hotspot_product": "dark-denim-top",
+            "hotspot_icon_position_top": 35,
+            "hotspot_icon_position_left": 72
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_block_qMRk3p",
+        "hotspot_block_BPx8Qb",
+        "hotspot_block_y8Gx9H",
+        "hotspot_block_dY7iPF",
+        "hotspot_block_jFzBGU",
+        "hotspot_block_Rta8TB"
+      ],
+      "name": "Custom grid hotspot",
+      "settings": {
+        "heading": "Tisso vison in the wild",
+        "auto_add_product": "dark-winter-jacket",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "mobile_padding_top": 32,
+        "mobile_padding_bottom": 32
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "custom_image_with_text_FPMzLw",
+    "featured_collection",
+    "custom_grid_hotspot_ePgqhi"
   ]
 }
